@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+	<head>
+		<title>Trak Me!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+ 
+	<link type="text/css" rel="stylesheet" href="TrakMe.css" media="screen"/>
+    <script type="text/javascript" src="javascripts/modernizr-2.5.3.js"></script>
+ 	</head>
+	<body>
+		<div id="showOnce">
+			<h1>This will disappear at 1st load if browser supports local storage.</h1>
+		</div>
+
+          <form id="location" action="/location/" method="post">
+            <fieldset>
+              <label for="address">
+                <input type="text" placeholder="Enter a location" name="address" id="address"/>
+              </label>
+              <a href="#" class="locate-me">Locate me</a>
+            </fieldset>
+            <button type="submit">Find</button>
+          </form><!-- #spot-location -->
+
+			<div id="photoedit" class="current">
+				<div id="cropper">
+					<div id="mapview">
+						<a href="#"></a>
+					</div><!--mapview end--!>	
+					<div id="streetview">
+						<h1>Street View</h1>
+						<a href="#"></a>
+					</div><!--streetview end--!>	
+				</div><!--cropper end--!>
+			</div><!--photoedit end--!>
+ 		
+		<div id="mask"></div>
+    <div id="spinner">
+      <img src="./images/my_spinner.gif" />
+    </div>
+		<div id="dialog">
+      		<h3 class="heading"></h3>
+      		<span class="content"></span><br>
+      		<button id="ok">OK</button>
+      		<!--<button id="cancel">Cancel</button>--!>
+    	</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/trakMe.js"></script>
+	</body>
+</html>

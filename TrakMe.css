@@ -1,0 +1,200 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  clear:both;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; 
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
+}
+
+body {
+  font-family: "HelveticaNeue", arial, helvetica sans-serif;
+  background: #00015F;
+  font-size: 0.875em;
+  line-height: 1.3; 
+}
+   
+#mask {
+	display: none;
+	background-color: #000;
+	opacity: 0.6;
+	right: 0;
+	z-index: 500;
+	top:0;
+	left: 0;
+	bottom: 0px;
+	position: absolute;
+}
+
+#spinner {
+	display: none;
+	position: absolute;
+	height: 200px;
+	top: 50%;
+	z-index: 600;
+	left: 50%;
+	margin-left: -32px;
+	width: 128px;
+}			
+
+#dialog {
+	display: none;
+	position: absolute;
+	width: 85%;
+	height: 200px;
+	top: 50%;
+	color:white;
+	background-color: rgb(12,15,68);
+	opacity: .9;
+	z-index: 600;
+	left: 5%;
+	-webkit-border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+	
+	border-top: 2px solid #DDD;
+ 	border-right: 2px solid #DDD;
+  	border-bottom: 2px solid #DDD;
+  	border-left: 2px solid #DDD;
+
+}
+
+#dialog button {
+
+	color: white;
+	width: 95%;
+	height: 40px;
+	margin: 5px;
+	border: 1px solid white;
+	background-color: blue;
+    background-image: -webkit-linear-gradient(rgba(167,169,189, .9), rgba(83, 67, 125, .9) 55%, rgba(60, 65, 107, .8) 55.1%, rgba(84, 89, 125, .8));
+    -webkit-border-radius: 0.75em; 
+    font-size:18px;
+    font-weight bold;
+	border-top: 1px solid #4081af;
+ 	border-right: 1px solid #2e69a3;
+  	border-bottom: 1px solid #20559a;
+  	border-left: 1px solid #2e69a3;
+  	-moz-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+  	-webkit-box-shadow: inset 0 1px 0 0 #72b9eb, 0 1px 2px 0 #b3b3b3;
+	text-shadow: 0 -1px 1px #3275bc;
+ 
+}
+
+#showOnce{
+	display:none;
+	color:whitesmoke;
+}
+
+#streetview {
+	display: none;
+	color: whitesmoke;
+}
+
+      #photoedit { 
+        overflow: hidden;
+      }
+      
+      #mapview {      
+        width: 300px;
+        height: 200px;
+        margin:0 auto;
+        clear:both;
+        -webkit-box-shadow: 0 0 5px #333;
+      }
+      
+      #streetview {
+        width: 450px;
+        height: 300px;
+        margin:0 auto;
+        clear:both;
+        -webkit-box-shadow: 0 0 5px #333;
+      }
+
+#location fieldset {
+	float: left;
+	position: relative;
+	width: 76%;
+}      
+
+#location input {
+-webkit-border-radius: 0.286em;
+-moz-border-radius: 0.286em;
+border-radius: 0.286em;
+background: #E1CECE;
+border: 1px #3C0603 solid;
+font-size: 1em;
+margin: 0;
+height: 2em;
+width: 100%;
+-webkit-appearance: caret;
+}
+
+#location button {
+
+text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 1px;
+-webkit-border-radius: 0.286em;
+-moz-border-radius: 0.286em;
+border-radius: 0.286em;
+-o-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+-moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+box-shadow: rgba(255, 255, 255, 0.2) 0 1px 1px 0 inset;
+font-family: "HelveticaNeue", arial, helvetica sans-serif;
+background: blue;
+border: 1px white solid;
+	border-top: 1px solid #4081af;
+ 	border-right: 1px solid #2e69a3;
+  	border-bottom: 1px solid #20559a;
+  	border-left: 1px solid #2e69a3;
+color: white;
+float: right;
+font-size: 0.857em;
+font-weight: bold;
+height: 3em;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+margin: 0;
+width: 22%;
+-webkit-background-clip: padding-box;
+}
+
+.no-geolocation .locate-me {
+  display: none; }
+
+.geolocation #location .locate-me {
+right: 0;
+}
+
+.geolocation .locate-me {
+  -webkit-border-top-right-radius: 0.286em;
+  -webkit-border-bottom-right-radius: 0.286em;
+  -moz-border-radius-topright: 0.286em;
+  -moz-border-radius-bottomright: 0.286em;
+  background: #eadddd;
+  border-left: 1px #b99f9e solid;
+  bottom: 0.071em;
+  overflow: hidden;
+  position: absolute;
+  right: 1px;
+  top: 0.1em;
+  text-indent: -999em;
+  width: 2em; 
+}
+  .geolocation .locate-me:after {
+    position: absolute;
+    left: 0.1em;
+    top: 0.3em;
+    text-indent: 0;
+    content: url(./images/geolocation_icon.png); 
+}
+/*.geolocation.svg .locate-me:after {
+  content: url(./images/geolocator.svg); 
+} */     
